@@ -1,5 +1,4 @@
 //JavaScript Linking***********************************************************************************************************************************
-// *************** index.js ***************
 
 alert("I love pizza");
 
@@ -55,12 +54,12 @@ console.log("Are you online?:",online);
 console.log(whatever);
 
 //JavaScript arithmetic expressions***********************************************************************************************************************************
-// *************** index.js ***************
+
  
-    arithmetic expression is some combination of
+   /* arithmetic expression is some combination of
     operands (values, variables, etc.)
     operators (+ - * / %)
-    that can be evaluated to a value
+    that can be evaluated to a value */
 
 
 var friends = 10;
@@ -92,7 +91,7 @@ var friends = 10;
 console.log(friends)
 
 //JavaScript User Input***********************************************************************************************************************************
-// ******* index.js *******
+
 //EASY WAY
 var myName = window.prompt("What's your name?");
 console.log("Hello",myName);
@@ -125,11 +124,62 @@ document.getElementById("myButton").onclick = function(){
 </html>
 */
 
-//JavaScript***********************************************************************************************************************************
-//Java Script**********************************************************************************************************************************
-//JavaScript***********************************************************************************************************************************
-//JavaScript***********************************************************************************************************************************
-//JavaScript***********************************************************************************************************************************
+//JavaScript Type conversion***********************************************************************************************************************************
+
+/* Type Conversion of numbers, strings, booleans
+(Explicit vs Implicit)
+change the datatype of a value to another */
+
+var age = window.prompt("How old are you?");
+ 
+console.log("HAPPY BIRTHDAY!");
+ 
+age = Number(age);
+ 
+age += 1;
+ 
+console.log(typeof age);
+console.log(age);
+
+
+var myVar;
+
+myVar = Number("3.14");
+//myVar = String(3.14);
+//myVar = Boolean("pizza"); 
+
+console.log(typeof myVar);
+console.log(myVar);
+
+
+//JavaScript Functions**********************************************************************************************************************************
+/*
+    A function is a block of code designed to perform, a particular task/procedure. 
+    We invoke "call" the function whenever we want it to do something. 
+    However, we need to define what the task the function should do
+*/
+ 
+// arguments = values that are sent
+// parameters = values that are received
+
+function toCelsius(f){
+    return (f-32) * (5/9);
+};
+
+function toFarenheit(c){
+    return (c * 9/5) + 32;
+};
+
+//var myTemp = toCelsius(100);
+var myTemp = toFarenheit(37.7);
+
+//console.log("My temp in C is",myTemp,"degrees");
+console.log("My temp in F is",myTemp,"degrees");
+
+//JavaScript Objects***********************************************************************************************************************************
+
+//JavaScript Arrays***********************************************************************************************************************************
+//JavaScript Statments***********************************************************************************************************************************
 //JavaScript***********************************************************************************************************************************
 //JavaScript***********************************************************************************************************************************
 //JavaScript***********************************************************************************************************************************
